@@ -1,0 +1,20 @@
+@font-face {
+   font-family: 'Montserrat-Thin';
+   font-display: swap;
+   src: url('Montserrat-Thin/font.ttf');
+}
+@font-face {
+   font-family: 'Montserrat-Medium';
+   font-display: swap;
+   src: url('Montserrat-Medium/font.ttf');
+}
+@font-face {
+   font-family: 'Montserrat-Light';
+   font-display: swap;
+   src: url('Montserrat-Light/font.ttf');
+}
+@font-face {
+   font-family: 'Cormorant-Light';
+   font-display: swap;
+   src: url('Cormorant-Light/font.ttf');
+}
