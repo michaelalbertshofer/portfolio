@@ -973,7 +973,7 @@ blockquote {
   border-radius: 0 !important;
   box-shadow: none !important;
   outline: none !important;
-  color: #000000 !important;
+  color: #232323 !important;
 }
 
 /* Hover-Effekt auch ohne Hintergrund */
@@ -983,7 +983,7 @@ blockquote {
   background-color: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  color: #000000 !important;
+  color: #232323 !important;
   opacity: 0.7; /* Optional: leichte Transparenz bei Hover */
 }
 
@@ -1010,12 +1010,12 @@ blockquote {
 /* Pfeil-Icon selbst schwarz machen */
 .mbr-arrow-up-icon,
 .mbr-arrow-up-icon::before {
-  color: #000000 !important;
+  color: #232323 !important;
 }
 
 /* Falls die Icons über andere Klassen gesteuert werden */
 .cm-icon-smallarrow-up {
-  color: #000000 !important;
+  color: #232323 !important;
 }
 
 /* Zusätzliche Sicherheit für alle möglichen Pfeil-Container */
@@ -1030,7 +1030,7 @@ blockquote {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background: none !important;
-  color: #000000 !important;
+  color: #232323 !important;
 }
 
 
@@ -1042,10 +1042,10 @@ blockquote {
 .carousel-indicators li {
   background: transparent !important;
   background-color: transparent !important;
-  border: 2px solid #000000 !important;
+  border: 1px solid #232323 !important;
   border-radius: 50% !important;
-  width: 12px !important;
-  height: 12px !important;
+  width: 6px !important;
+  height: 6px !important;
   margin: 0 5px !important;
   cursor: pointer;
   opacity: 1 !important;
@@ -1057,8 +1057,7 @@ blockquote {
 /* Aktiver/ausgewählter Indikator: gefüllter schwarzer Kreis */
 .carousel-indicators li.active,
 .carousel-indicators .active {
-  background: #000000 !important;
-  background-color: #000000 !important;
-  border: 2px solid #000000 !important;
+  background: #232323 !important;
+  background-color: #232323 !important;
+  border: 1px solid #232323 !important;
 }
-
