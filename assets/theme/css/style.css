@@ -959,3 +959,129 @@ blockquote {
 	top: 0;
 	left: -2400px;
 }
+
+
+
+
+
+/* Vereinfachte Carousel-Pfeile */
+.mobi-mbri-arrow-prev,
+.mobi-mbri-arrow-next {
+  /* Entfernen Sie alle Hintergründe und Rahmen */
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  
+  /* Verwenden Sie CSS-Dreiecke statt Icon-Fonts */
+  font-size: 0; /* Versteckt den ursprünglichen Icon-Font */
+  width: 0;
+  height: 0;
+  display: inline-block;
+}
+
+/* Linker Pfeil (◀) */
+.mobi-mbri-arrow-prev::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent #000000 transparent transparent;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Rechter Pfeil (▶) */
+.mobi-mbri-arrow-next::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent #000000;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Vereinfachter Back-to-Top Pfeil */
+.mbr-arrow-up a {
+  /* Entfernen Sie Hintergrund und Rahmen */
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+
+.mbr-arrow-up a:hover {
+  background: none !important;
+}
+
+/* Ersetzen Sie den komplexen Pfeil durch einen einfachen */
+.mbr-arrow-up-icon::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 8px 12px 8px;
+  border-color: transparent transparent #000000 transparent;
+  transform: none;
+  position: static;
+  top: auto;
+  left: auto;
+}
+
+/* Alternative: Verwenden Sie Unicode-Pfeile (noch einfacher) */
+/*
+.mobi-mbri-arrow-prev::before {
+  content: '◀';
+  color: #000000;
+  font-size: 20px;
+  font-family: sans-serif;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mobi-mbri-arrow-next::before {
+  content: '▶';
+  color: #000000;
+  font-size: 20px;
+  font-family: sans-serif;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mbr-arrow-up-icon::before {
+  content: '▲';
+  color: #000000;
+  font-size: 16px;
+  font-family: sans-serif;
+  transform: none;
+  position: static;
+  top: auto;
+  left: auto;
+}
+*/
+
+/* Hover-Effekte für bessere UX (optional) */
+.mobi-mbri-arrow-prev:hover::before,
+.mobi-mbri-arrow-next:hover::before {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.mbr-arrow-up a:hover .mbr-arrow-up-icon::before {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
