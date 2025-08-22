@@ -964,124 +964,71 @@ blockquote {
 
 
 
-/* Vereinfachte Carousel-Pfeile */
+/* Carousel-Pfeile: Umrandung entfernen, Pfeil schwarz machen */
 .mobi-mbri-arrow-prev,
 .mobi-mbri-arrow-next {
-  /* Entfernen Sie alle Hintergründe und Rahmen */
   background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  color: #000000 !important;
+}
+
+/* Hover-Effekt auch ohne Hintergrund */
+.mobi-mbri-arrow-prev:hover,
+.mobi-mbri-arrow-next:hover {
+  background: none !important;
+  background-color: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  border-radius: 0 !important;
-  
-  /* Verwenden Sie CSS-Dreiecke statt Icon-Fonts */
-  font-size: 0; /* Versteckt den ursprünglichen Icon-Font */
-  width: 0;
-  height: 0;
-  display: inline-block;
+  color: #000000 !important;
+  opacity: 0.7; /* Optional: leichte Transparenz bei Hover */
 }
 
-/* Linker Pfeil (◀) */
-.mobi-mbri-arrow-prev::before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 15px 10px 0;
-  border-color: transparent #000000 transparent transparent;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/* Rechter Pfeil (▶) */
-.mobi-mbri-arrow-next::before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 0 10px 15px;
-  border-color: transparent transparent transparent #000000;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/* Vereinfachter Back-to-Top Pfeil */
+/* Back-to-Top Pfeil: Kreis und Umrandung entfernen */
 .mbr-arrow-up a {
-  /* Entfernen Sie Hintergrund und Rahmen */
   background: none !important;
+  background-color: transparent !important;
   border: none !important;
   border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
   width: auto;
   height: auto;
-  padding: 10px;
+  padding: 10px; /* Etwas Padding für bessere Klickfläche */
 }
 
 .mbr-arrow-up a:hover {
   background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  opacity: 0.7; /* Optional: leichte Transparenz bei Hover */
 }
 
-/* Ersetzen Sie den komplexen Pfeil durch einen einfachen */
+/* Pfeil-Icon selbst schwarz machen */
+.mbr-arrow-up-icon,
 .mbr-arrow-up-icon::before {
-  content: '';
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 8px 12px 8px;
-  border-color: transparent transparent #000000 transparent;
-  transform: none;
-  position: static;
-  top: auto;
-  left: auto;
+  color: #000000 !important;
 }
 
-/* Alternative: Verwenden Sie Unicode-Pfeile (noch einfacher) */
-/*
-.mobi-mbri-arrow-prev::before {
-  content: '◀';
-  color: #000000;
-  font-size: 20px;
-  font-family: sans-serif;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+/* Falls die Icons über andere Klassen gesteuert werden */
+.cm-icon-smallarrow-up {
+  color: #000000 !important;
 }
 
-.mobi-mbri-arrow-next::before {
-  content: '▶';
-  color: #000000;
-  font-size: 20px;
-  font-family: sans-serif;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+/* Zusätzliche Sicherheit für alle möglichen Pfeil-Container */
+.carousel-control-prev,
+.carousel-control-next {
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
-.mbr-arrow-up-icon::before {
-  content: '▲';
-  color: #000000;
-  font-size: 16px;
-  font-family: sans-serif;
-  transform: none;
-  position: static;
-  top: auto;
-  left: auto;
-}
-*/
-
-/* Hover-Effekte für bessere UX (optional) */
-.mobi-mbri-arrow-prev:hover::before,
-.mobi-mbri-arrow-next:hover::before {
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
-}
-
-.mbr-arrow-up a:hover .mbr-arrow-up-icon::before {
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background: none !important;
+  color: #000000 !important;
 }
