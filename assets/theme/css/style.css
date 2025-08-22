@@ -1032,3 +1032,33 @@ blockquote {
   background: none !important;
   color: #000000 !important;
 }
+
+
+/* Carousel-Indikatoren: Minimalistische schwarze Kreise */
+.carousel-indicators {
+  margin-bottom: 1rem; /* Optional: Abstand anpassen */
+}
+
+.carousel-indicators li {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 2px solid #000000 !important;
+  border-radius: 50% !important;
+  width: 12px !important;
+  height: 12px !important;
+  margin: 0 5px !important;
+  cursor: pointer;
+  opacity: 1 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  transition: background-color 0.2s ease !important;
+}
+
+/* Aktiver/ausgewählter Indikator: gefüllter schwarzer Kreis */
+.carousel-indicators li.active,
+.carousel-indicators .active {
+  background: #000000 !important;
+  background-color: #000000 !important;
+  border: 2px solid #000000 !important;
+}
+
