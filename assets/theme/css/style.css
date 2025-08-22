@@ -959,3 +959,105 @@ blockquote {
 	top: 0;
 	left: -2400px;
 }
+
+
+
+
+
+/* Carousel-Pfeile: Umrandung entfernen, Pfeil schwarz machen */
+.mobi-mbri-arrow-prev,
+.mobi-mbri-arrow-next {
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  color: #232323 !important;
+}
+
+/* Hover-Effekt auch ohne Hintergrund */
+.mobi-mbri-arrow-prev:hover,
+.mobi-mbri-arrow-next:hover {
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #232323 !important;
+  opacity: 0.7; /* Optional: leichte Transparenz bei Hover */
+}
+
+/* Back-to-Top Pfeil: Kreis und Umrandung entfernen */
+.mbr-arrow-up a {
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  width: auto;
+  height: auto;
+  padding: 10px; /* Etwas Padding für bessere Klickfläche */
+}
+
+.mbr-arrow-up a:hover {
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  opacity: 0.7; /* Optional: leichte Transparenz bei Hover */
+}
+
+/* Pfeil-Icon selbst schwarz machen */
+.mbr-arrow-up-icon,
+.mbr-arrow-up-icon::before {
+  color: #232323 !important;
+}
+
+/* Falls die Icons über andere Klassen gesteuert werden */
+.cm-icon-smallarrow-up {
+  color: #232323 !important;
+}
+
+/* Zusätzliche Sicherheit für alle möglichen Pfeil-Container */
+.carousel-control-prev,
+.carousel-control-next {
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background: none !important;
+  color: #232323 !important;
+}
+
+
+/* Carousel-Indikatoren: Minimalistische schwarze Kreise */
+.carousel-indicators {
+  margin-bottom: 1rem; /* Optional: Abstand anpassen */
+}
+
+.carousel-indicators li {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 1px solid #232323 !important;
+  border-radius: 50% !important;
+  width: 6px !important;
+  height: 6px !important;
+  margin: 0 5px !important;
+  cursor: pointer;
+  opacity: 1 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  transition: background-color 0.2s ease !important;
+}
+
+/* Aktiver/ausgewählter Indikator: gefüllter schwarzer Kreis */
+.carousel-indicators li.active,
+.carousel-indicators .active {
+  background: #232323 !important;
+  background-color: #232323 !important;
+  border: 1px solid #232323 !important;
+}
